@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gabriel_jolin_showcase/static/css/main.073c9b0a.css",
+    "main.js": "/gabriel_jolin_showcase/static/js/main.84fd6935.js",
+    "static/js/787.7b0696f9.chunk.js": "/gabriel_jolin_showcase/static/js/787.7b0696f9.chunk.js",
+    "index.html": "/gabriel_jolin_showcase/index.html",
+    "main.073c9b0a.css.map": "/gabriel_jolin_showcase/static/css/main.073c9b0a.css.map",
+    "main.84fd6935.js.map": "/gabriel_jolin_showcase/static/js/main.84fd6935.js.map",
+    "787.7b0696f9.chunk.js.map": "/gabriel_jolin_showcase/static/js/787.7b0696f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.84fd6935.js"
+  ]
+}
