@@ -4,9 +4,8 @@ import React from 'react'
 import AdvancedCard from './Components/AdvancedCard/AdvancedCard';
 
 function App() {
-
   return (
-    <div className="flex-container" >
+    <div className="flex-container">
       <AdvancedCard
         className='flex-item'
         title="Jungmin"
@@ -22,7 +21,9 @@ function App() {
       <AdvancedCard
         className='flex-item'
         title="Title"
-        description="Description"
+        description="TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF 
+        TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF 
+        TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF "
         thumbnail="https://miro.medium.com/v2/resize:fit:640/format:webp/0*M684C4YtTi75QjUC.jpg"
       />
       <AdvancedCard
@@ -32,6 +33,7 @@ function App() {
         thumbnail="https://miro.medium.com/v2/resize:fit:640/format:webp/0*M684C4YtTi75QjUC.jpg"
       />
     </div>
+    
 
 
   )
