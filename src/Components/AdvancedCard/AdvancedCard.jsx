@@ -31,6 +31,7 @@ const AdvancedCard = ({
             <Popup className='popup' trigger={buttonPopup} setTrigger={setButtonPopup}>
                 <object className='article_pdf' data={pdfLocation} type="application/pdf">
                 </object>
+                {/* <iframe className='article_pdf' src={pdfLocation}/> */}
             </Popup>
         </section>
     )

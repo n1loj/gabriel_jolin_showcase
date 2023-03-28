@@ -1,7 +1,16 @@
 import './App.scss';
-import Alice from "./assets/images/Alice.jpg";
+
 import EngineeringBackground from "./assets/images/EngineeringBackground.jpg";
+
+import Alice from "./assets/images/Alice.jpg";
 import TestPdf from "./assets/pdfs/pdfTest.pdf";
+
+import RevitLogo from "./assets/images/RevitLogo.png";
+import RevitApiPdf from "./assets/pdfs/WPF_Standardization.pdf";
+
+import WPFStandardizationLogo from "./assets/images/WpfStandardizationLogo.png";
+import WPFStandardizationPdf from "./assets/pdfs/WPF_Standardization.pdf";
+
 import React from 'react'
 import AdvancedCard from './Components/AdvancedCard/AdvancedCard';
 
@@ -11,17 +20,19 @@ function App() {
       <div className="flex-container">
         <AdvancedCard
           className='flex-item'
-          title="Jungmin"
-          description="<3"
-          thumbnail="https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/512x512/heart.png"
-          pdfLocation={TestPdf}
+          title="WPF Standardization"
+          description="Standardization of WPF user controls in UI design is vital for scalability.  
+          Additionally, there are several useful controls not provided out-of-the box with .net user controls.  Here is how I've helped standardize the use of WPF in applications."
+          thumbnail={WPFStandardizationLogo}
+          pdfLocation={WPFStandardizationPdf}
         />
         <AdvancedCard
           className='flex-item'
-          title="Alice"
-          description="Love"
-          thumbnail={Alice}
-          pdfLocation={TestPdf}
+          title="Autodesk Development"
+          description="I've spent a good deal of time in the world of Autodesk .api's. Though most of my familiarity is in the Revit api, 
+          I've also spent time in CAD api's (with things such as Sheet Set Manager) as well as Autodesk P&ID api's regarding exporting of P&ID data.  Here are some highlights of my work."
+          thumbnail={RevitLogo}
+          pdfLocation={RevitApiPdf}
         />
         <AdvancedCard
           className='flex-item'
