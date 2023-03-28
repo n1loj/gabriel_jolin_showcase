@@ -7,7 +7,8 @@ import Popup from '../Popup/Popup';
 const AdvancedCard = ({
     title,
     description,
-    thumbnail
+    thumbnail,
+    pdfLocation
 }) => {
 
     const [buttonPopup, setButtonPopup] = useState(false);
@@ -27,9 +28,9 @@ const AdvancedCard = ({
                     </div>
                 </div>
             </button>
-            <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-                <h3>My Popup</h3>
-                <p>This is my popup</p>
+            <Popup className='popup' trigger={buttonPopup} setTrigger={setButtonPopup}>
+                <object className='article_pdf' data={pdfLocation} type="application/pdf">
+                </object>
             </Popup>
         </section>
     )
