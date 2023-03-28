@@ -5,7 +5,7 @@ function Popup(props) {
     return (props.trigger) ? (
         <div className="popup">
             <div className="popup-inner">
-                <button className="close-btn" onClick={() => props.setTrigger(false)}>Closeit</button> 
+                <span className="close-btn" onClick={() => props.setTrigger(false)}>&times;</span> 
                 {props.children}
             </div>
         </div>
