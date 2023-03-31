@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="App">
       <div className="header section parallax parallax-0"
-      ref={headerSection}>
+        ref={headerSection}>
         <div className="centered-layout">
           <div>
             <h1>Gabriel Jolin</h1>
@@ -53,14 +53,14 @@ function App() {
         ref={wpfStandardizationSection}
       >
         <div className="section-content">
-        <div className="arrow-up bounce-up">
-          <a 
-            href="#wpf-standardization"
-            onClick={() => scrollToSection(headerSection)}
-          >
-            &#10148;
-          </a>
-        </div>
+          <div className="arrow-up bounce-up">
+            <a
+              href="#wpf-standardization"
+              onClick={() => scrollToSection(headerSection)}
+            >
+              &#10148;
+            </a>
+          </div>
           <div className="content-title">
             <div>
               <img src={WPFStandardizationLogo} />
@@ -78,7 +78,7 @@ function App() {
             </p>
           </section>
         </div>
-        
+
         <div className="arrow-down bounce-down">
           <a
             href="#wpf-standardization"
@@ -89,7 +89,7 @@ function App() {
         </div>
       </div>
 
-      <hr class='solid'/>
+      <hr class='solid' />
 
       <div
         className="revit section"
@@ -114,14 +114,14 @@ function App() {
           <img className='content-gif' src={RevitGif} />
           <section className="content">
             <p>
-              I've spent a good deal of time in the world of Autodesk .api's. 
-              Though most of my familiarity is in the Revit api, I've also spent time in CAD api's 
-              (with things such as Sheet Set Manager) as well as Autodesk P&ID api's 
+              I've spent a good deal of time in the world of Autodesk .api's.
+              Though most of my familiarity is in the Revit api, I've also spent time in CAD api's
+              (with things such as Sheet Set Manager) as well as Autodesk P&ID api's
               regarding exporting of P&ID data.  Here are some highlights of my work.
             </p>
           </section>
         </div>
-        
+
 
 
         <div className="arrow-down bounce-down">
