@@ -58,15 +58,15 @@ function App() {
         className="wpf-standardization section"
         ref={wpfStandardizationSection}
       >
+        <div className="arrow-up bounce-up">
+          <a
+            href="#wpf-standardization"
+            onClick={() => scrollToSection(headerSection)}
+          >
+            &#10148;
+          </a>
+        </div>
         <div className="section-content">
-          <div className="arrow-up bounce-up">
-            <a
-              href="#wpf-standardization"
-              onClick={() => scrollToSection(headerSection)}
-            >
-              &#10148;
-            </a>
-          </div>
           <div className="content-title">
             <div>
               <img src={WPFStandardizationLogo} />
@@ -74,7 +74,9 @@ function App() {
             <h1 className="content-titles">WPF Standardization</h1>
             <a onClick={() => setButtonPopup(true)}><FaExternalLinkAlt /></a>
           </div>
-          <img className='content-gif' src={WPFGif} />
+          <div className="image-container">
+            <img className='content-gif' src={WPFGif} />
+          </div>
           <section className="content">
             <p>
               Standardization of WPF user controls in UI design is vital for
@@ -121,7 +123,9 @@ function App() {
             <h1 className="content-titles">Autodesk Development</h1>
             {/* <a href="./assets/pdfs/pdfTest.pdf"><FaExternalLinkAlt /></a> */}
           </div>
-          <img className='content-gif' src={RevitGif} />
+          <div className="image-container">
+            <img className='content-gif' src={RevitGif} />
+          </div>
           <section className="content">
             <p>
               I've spent a good deal of time in the world of Autodesk .api's.
