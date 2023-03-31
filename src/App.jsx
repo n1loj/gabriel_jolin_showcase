@@ -1,7 +1,5 @@
 import './App.scss';
 
-import EngineeringBackground from "./assets/images/EngineeringBackground.jpg";
-
 import Alice from "./assets/images/Alice.jpg";
 import TestPdf from "./assets/pdfs/pdfTest.pdf";
 
@@ -12,49 +10,48 @@ import WPFStandardizationLogo from "./assets/images/WpfStandardizationLogo.png";
 import WPFStandardizationPdf from "./assets/pdfs/WPF_Standardization.pdf";
 
 import React from 'react'
-import AdvancedCard from './Components/AdvancedCard/AdvancedCard';
+import { useRef } from 'react';
+
 
 function App() {
+
+  const wpfStandardizationSection = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: 'smooth'
+    })
+  }
+
   return (
-    <div className="homepage">
-      <div className="flex-container">
-        <AdvancedCard
-          className='flex-item'
-          title="WPF Standardization"
-          description="Standardization of WPF user controls in UI design is vital for scalability.  
-          Additionally, there are several useful controls not provided out-of-the box with .net user controls.  Here is how I've helped standardize the use of WPF in applications."
-          thumbnail={WPFStandardizationLogo}
-          pdfLocation={WPFStandardizationPdf}
-        />
-        <AdvancedCard
-          className='flex-item'
-          title="Autodesk Development"
-          description="I've spent a good deal of time in the world of Autodesk .api's. Though most of my familiarity is in the Revit api, 
-          I've also spent time in CAD api's (with things such as Sheet Set Manager) as well as Autodesk P&ID api's regarding exporting of P&ID data.  Here are some highlights of my work."
-          thumbnail={RevitLogo}
-          pdfLocation={RevitApiPdf}
-        />
-        <AdvancedCard
-          className='flex-item'
-          title="Title"
-          description="TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF 
-        TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF 
-        TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF TONS OF STUFF "
-          thumbnail="https://miro.medium.com/v2/resize:fit:640/format:webp/0*M684C4YtTi75QjUC.jpg"
-          pdfLocation={TestPdf}
-        />
-        <AdvancedCard
-          className='flex-item'
-          title="Title 2"
-          description="Description 2"
-          thumbnail="https://miro.medium.com/v2/resize:fit:640/format:webp/0*M684C4YtTi75QjUC.jpg"
-          pdfLocation={TestPdf}
-        />
+    <div className="App">
+      <div className="header section parallax parallax-0">
+        <ul>
+          <h1>Gabriel Jolin</h1>
+          <h2>Developer Portfolio</h2>
+          <div className="arrow bounce">
+            <a href="#wpf-standardization" onClick={() => scrollToSection(wpfStandardizationSection)}>&#10148;</a>
+          </div>
+        </ul>
+        
+      </div>
+
+      <div className="wpf-standardization content-section" ref={wpfStandardizationSection}>
+        <div className='wpf-image'>
+          <img src={WPFStandardizationLogo} />
+        </div>
+        <section className='wpf-content'>
+          <h1 className='content-titles'>WPF Standardization</h1>
+        </section>
+      </div>
+
+      <div className="revit content-section parallax parallax-1">
+      </div>
+      <div className="footer section parallax parallax-2">
+        Section 3
       </div>
     </div>
-    
-
-
   )
 }
 
