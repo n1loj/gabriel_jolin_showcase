@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/gabriel_jolin_showcase/static/css/main.4cc31adf.css",
-    "main.js": "/gabriel_jolin_showcase/static/js/main.1291ef32.js",
+    "main.css": "/gabriel_jolin_showcase/static/css/main.59fe5b17.css",
+    "main.js": "/gabriel_jolin_showcase/static/js/main.cf5cd1bf.js",
     "static/js/787.7b0696f9.chunk.js": "/gabriel_jolin_showcase/static/js/787.7b0696f9.chunk.js",
     "static/media/revit.gif": "/gabriel_jolin_showcase/static/media/revit.15446f03940f84898ac5.gif",
     "static/media/wpf1.gif": "/gabriel_jolin_showcase/static/media/wpf1.8848b656e1c861948c6e.gif",
     "static/media/Alice.jpg": "/gabriel_jolin_showcase/static/media/Alice.612648b6d207f62e4b57.jpg",
     "static/media/WpfStandardizationLogo.png": "/gabriel_jolin_showcase/static/media/WpfStandardizationLogo.49ca6c1324676cd175cc.png",
+    "static/media/Revit_pdf.pdf": "/gabriel_jolin_showcase/static/media/Revit_pdf.a90be241bdc86a2f86d7.pdf",
     "static/media/WPF_Standardization.pdf": "/gabriel_jolin_showcase/static/media/WPF_Standardization.983ca92719b0000b9877.pdf",
     "index.html": "/gabriel_jolin_showcase/index.html",
-    "main.4cc31adf.css.map": "/gabriel_jolin_showcase/static/css/main.4cc31adf.css.map",
-    "main.1291ef32.js.map": "/gabriel_jolin_showcase/static/js/main.1291ef32.js.map",
+    "main.59fe5b17.css.map": "/gabriel_jolin_showcase/static/css/main.59fe5b17.css.map",
+    "main.cf5cd1bf.js.map": "/gabriel_jolin_showcase/static/js/main.cf5cd1bf.js.map",
     "787.7b0696f9.chunk.js.map": "/gabriel_jolin_showcase/static/js/787.7b0696f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cc31adf.css",
-    "static/js/main.1291ef32.js"
+    "static/css/main.59fe5b17.css",
+    "static/js/main.cf5cd1bf.js"
   ]
 }
