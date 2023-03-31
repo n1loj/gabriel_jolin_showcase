@@ -1,7 +1,10 @@
 import './App.scss';
+import React from 'react'
+import { useState } from 'react';
+import { useRef } from 'react';
 
-import Alice from "./assets/images/Alice.jpg";
-import TestPdf from "./assets/pdfs/pdfTest.pdf";
+// import Popup from './Components/Popup/Popup';
+
 
 import RevitLogo from "./assets/images/RevitLogo.png";
 import RevitApiPdf from "./assets/pdfs/WPF_Standardization.pdf";
@@ -13,8 +16,8 @@ import WPFGif from "./assets/images/wpf1.gif"
 import WPFStandardizationPdf from "./assets/pdfs/WPF_Standardization.pdf";
 import { FaExternalLinkAlt } from 'react-icons/fa';
 
-import React from 'react'
-import { useRef } from 'react';
+
+
 
 
 function App() {
@@ -31,7 +34,10 @@ function App() {
     })
   }
 
+  const [buttonPopup, setButtonPopup] = useState(false);
+
   return (
+
     <div className="App">
       <div className="header section parallax parallax-0"
         ref={headerSection}>
@@ -66,7 +72,7 @@ function App() {
               <img src={WPFStandardizationLogo} />
             </div>
             <h1 className="content-titles">WPF Standardization</h1>
-            <a href="./assets/pdfs/pdfTest.pdf"><FaExternalLinkAlt /></a>
+            <a onClick={() => setButtonPopup(true)}><FaExternalLinkAlt /></a>
           </div>
           <img className='content-gif' src={WPFGif} />
           <section className="content">
@@ -87,6 +93,10 @@ function App() {
             &#10148;
           </a>
         </div>
+        <div className="popup" style={buttonPopup ? {} : { display: 'none' }}>
+          <button className='close' onClick={() => setButtonPopup(false)}>&times;</button>
+          <object className='pdf' data={WPFStandardizationPdf} type="application/pdf"></object>
+        </div>
       </div>
 
       <hr class='solid' />
@@ -106,10 +116,10 @@ function App() {
         <div className="section-content">
           <div className="content-title">
             <div>
-              <img src={WPFStandardizationLogo} />
+              <img src={RevitLogo} />
             </div>
             <h1 className="content-titles">Autodesk Development</h1>
-            <a href="./assets/pdfs/pdfTest.pdf"><FaExternalLinkAlt /></a>
+            {/* <a href="./assets/pdfs/pdfTest.pdf"><FaExternalLinkAlt /></a> */}
           </div>
           <img className='content-gif' src={RevitGif} />
           <section className="content">
@@ -133,6 +143,8 @@ function App() {
           </a>
         </div>
       </div>
+
+
       <div className="header section parallax parallax-2" ref={footerSection}>
         <div className="arrow-up bounce-up">
           <a

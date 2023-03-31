@@ -2,7 +2,7 @@
 .section {
   height: 100vh;
   position: relative;
-  
+
   // @media only screen and (max-width: 1250px) {
   //   font-size: 2rem;
   // }
@@ -16,29 +16,35 @@
     .content-title {
       display: flex;
       align-items: center;
-      gap: 2rem; 
-  
+      gap: 2rem;
+
       h1 {
         font-size: 5rem;
       }
+
       img {
         object-fit: contain;
         height: 7rem;
       }
+
       svg {
         color: white;
         height: 2rem;
         width: 2rem;
       }
+
+      a {
+        cursor: pointer;
+      }
     }
-  
+
     .content-gif {
       object-fit: contain;
       max-height: 68.5vh;
       border-radius: 20px;
       background-color: rgba(83, 106, 170, 0.151);
     }
-  
+
     .content {
       font-size: 1.6rem;
     }
@@ -89,7 +95,7 @@
     animation: bounce-up 2s infinite;
   }
 
- 
+
 
 
   @keyframes bounce-down {
@@ -110,6 +116,7 @@
       transform: translateY(-15px);
     }
   }
+
   @keyframes bounce-up {
 
     0%,
@@ -127,6 +134,38 @@
     60% {
       transform: translateY(15px);
     }
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background-color: #282c34;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  border-width: 10px;
+  border-style: solid;
+
+  .pdf {
+    height: 100%;
+    width: 100%;
+  }
+
+  .close {
+    width: 100%;
+    font-size: 3em;
+    color: white;
+    border: none;
+    background: none;
+    z-index: 9999;
+    cursor: pointer;
   }
 }
 
@@ -181,6 +220,8 @@
   border-radius: 5px;
   margin: 0px 20px;
 }
+
+
 
 //resets
 html {
