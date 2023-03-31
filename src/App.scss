@@ -171,6 +171,38 @@
   }
 }
 
+.popup2 {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background-color: #282c34;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  border-width: 10px;
+  border-style: solid;
+
+  .pdf {
+    height: 100%;
+    width: 100%;
+  }
+
+  .close {
+    width: 100%;
+    font-size: 3em;
+    color: white;
+    border: none;
+    background: none;
+    z-index: 9999;
+    cursor: pointer;
+  }
+}
+
 
 
 //header

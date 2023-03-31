@@ -7,7 +7,7 @@ import { useRef } from 'react';
 
 
 import RevitLogo from "./assets/images/RevitLogo.png";
-import RevitApiPdf from "./assets/pdfs/WPF_Standardization.pdf";
+import RevitApiPdf from "./assets/pdfs/Revit_pdf.pdf";
 import RevitGif from "./assets/images/revit.gif"
 
 import WPFStandardizationLogo from "./assets/images/WpfStandardizationLogo.png";
@@ -35,6 +35,8 @@ function App() {
   }
 
   const [buttonPopup, setButtonPopup] = useState(false);
+
+  const [buttonPopup2, setButtonPopup2] = useState(false);
 
   return (
 
@@ -121,6 +123,7 @@ function App() {
               <img src={RevitLogo} />
             </div>
             <h1 className="content-titles">Autodesk Development</h1>
+            <a onClick={() => setButtonPopup2(true)}><FaExternalLinkAlt /></a>
             {/* <a href="./assets/pdfs/pdfTest.pdf"><FaExternalLinkAlt /></a> */}
           </div>
           <div className="image-container">
@@ -145,6 +148,10 @@ function App() {
           >
             &#10148;
           </a>
+        </div>
+        <div className="popup2" style={buttonPopup2 ? {} : { display: 'none' }}>
+          <button className='close' onClick={() => setButtonPopup2(false)}>&times;</button>
+          <object className='pdf' data={RevitApiPdf} type="application/pdf"></object>
         </div>
       </div>
 
